@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('C://Users//HP//Desktop//Machine Learning A-Z//Part 2 - Regression//Section 6 - Polynomial Regression//Position_Salaries.csv')
+dataset = pd.read_csv('Path To Dataset')
 
 # Splitting into dependent and independent variable
 X= dataset.iloc[:,1:2].values
@@ -57,12 +57,12 @@ plt.show()
 
 # Predicting a new result with Linear Regression
 level= float(input('Enter your Experience level: '))
-lin_reg.predict(level)
+print(lin_reg.predict(level))
 
 
 # Predicting a new result with Polynomial Regression
 
 level= float(input('Enter your Experience level: '))
-lin_reg2.predict(poly_reg.fit_transform(level))
+print(lin_reg2.predict(poly_reg.fit_transform(level)))
 
 
